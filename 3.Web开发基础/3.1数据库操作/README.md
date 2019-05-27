@@ -23,7 +23,96 @@ drop database [库名]
 
 创建表
 
+### 3.2 表操作
 
+>旧表表数据
+>
+>```sql
+>MariaDB [test]> select * from test;
+>+----+--------+------+-------+
+>| id | name   | addr | score |
+>+----+--------+------+-------+
+>|  1 | 测试   | NULL |   100 |
+>|  2 | 测试   | NULL |   100 |
+>|  3 | 测试   | NULL |   100 |
+>|  4 | 测试   | NULL |   100 |
+>|  5 | 测试   | NULL |   100 |
+>+----+--------+------+-------+
+>```
+>
+>旧表表结构
+>
+>```sql
+>+-------+-------------+------+-----+--------------+----------------+
+>| Field | Type        | Null | Key | Default      | Extra          |
+>+-------+-------------+------+-----+--------------+----------------+
+>| id    | int(11)     | NO   | PRI | NULL         | auto_increment |
+>| name  | varchar(20) | YES  |     | NULL         |                |
+>| addr  | varchar(20) | YES  |     | 地址不详     |                |
+>| score | int(11)     | YES  |     | NULL         |                |
+>+-------+-------------+------+-----+--------------+----------------+
+>```
+>
+>
+
+复制表 
+
+语法：`carete table 新表名 select 字段名 from 旧表名`（复制数据，不能复制旧表的主键）
+
+试例：
+
+```sql
+MariaDB [test]> create table test1 select * from test;
+Query OK, 5 rows affected (0.33 sec)
+Records: 5  Duplicates: 0  Warnings: 0
+
+MariaDB [test]> select * from test1;
++----+--------+------+-------+
+| id | name   | addr | score |
++----+--------+------+-------+
+|  1 | 测试   | NULL |   100 |
+|  2 | 测试   | NULL |   100 |
+|  3 | 测试   | NULL |   100 |
+|  4 | 测试   | NULL |   100 |
+|  5 | 测试   | NULL |   100 |
++----+--------+------+-------+
+5 rows in set (0.00 sec)
+
+MariaDB [test]> desc test1;  #该表中没有主键
++-------+-------------+------+-----+--------------+-------+
+| Field | Type        | Null | Key | Default      | Extra |
++-------+-------------+------+-----+--------------+-------+
+| id    | int(11)     | NO   |     | 0            |       |
+| name  | varchar(20) | YES  |     | NULL         |       |
+| addr  | varchar(20) | YES  |     | 地址不详     |       |
+| score | int(11)     | YES  |     | NULL         |       |
++-------+-------------+------+-----+--------------+-------+
+4 rows in set (0.00 sec)
+```
+
+语法：`create table 新表名 like 旧表名`（复制所有的表结构，但是不复制数据）
+
+试例：
+
+```sql
+MariaDB [test]> create table test2 like test;
+Query OK, 0 rows affected (0.06 sec)
+
+MariaDB [test]> select * from test2;
+Empty set (0.00 sec)
+
+MariaDB [test]> desc test2; #表结构全部服务制过来，但是没有数据
++-------+-------------+------+-----+--------------+----------------+
+| Field | Type        | Null | Key | Default      | Extra          |
++-------+-------------+------+-----+--------------+----------------+
+| id    | int(11)     | NO   | PRI | NULL         | auto_increment |
+| name  | varchar(20) | YES  |     | NULL         |                |
+| addr  | varchar(20) | YES  |     | 地址不详     |                |
+| score | int(11)     | YES  |     | NULL         |                |
++-------+-------------+------+-----+--------------+----------------+
+4 rows in set (0.01 sec)
+
+```
 
 
 
@@ -227,4 +316,122 @@ Empty set (0.01 sec)
 ```
 
 
+
+#### 3.3.4 清空表
+
+> ```sql
+> +----+--------+------+-------+
+> | id | name   | addr | score |
+> +----+--------+------+-------+
+> |  1 | 高手   |      |   100 |
+> | 10 | 测试   | NULL |   100 |
+> +----+--------+------+-------+
+> ```
+
+语法：`truncate table 表名`
+
+试例：
+
+```sql
+MariaDB [test]> truncate table test;
+Query OK, 0 rows affected (0.20 sec)
+```
+
+```
+脚下留心：delete from 表和truncate table 表区别？
+delete from 表：遍历表记录，一条一条的删除
+truncate table：将原表销毁，再创建一个同结构的新表。就清空表而言，这种方法效率高。
+```
+
+#### 3.3.5 查询表
+
+> ```sql
+> +----+--------+------+-------+
+> | id | name   | addr | score |
+> +----+--------+------+-------+
+> |  1 | 测试   | NULL |   100 |
+> |  2 | 测试   | NULL |   100 |
+> |  3 | 测试   | NULL |   100 |
+> |  4 | 测试   | NULL |   100 |
+> |  5 | 测试   | NULL |   100 |
+> +----+--------+------+-------+
+> ```
+
+语法：`select 字段名 from 表名`
+
+试例1：
+
+```sql
+MariaDB [test]> select name,addr from test;
++--------+------+
+| name   | addr |
++--------+------+
+| 测试   | NULL |
+| 测试   | NULL |
+| 测试   | NULL |
+| 测试   | NULL |
+| 测试   | NULL |
++--------+------+
+```
+
+试例2：
+
+```sql
+MariaDB [test]> select id,name,addr,score from test;
++----+--------+------+-------+
+| id | name   | addr | score |
++----+--------+------+-------+
+|  1 | 测试   | NULL |   100 |
+|  2 | 测试   | NULL |   100 |
+|  3 | 测试   | NULL |   100 |
+|  4 | 测试   | NULL |   100 |
+|  5 | 测试   | NULL |   100 |
++----+--------+------+-------+
+
+```
+
+试例3：(*代表全部字段)
+
+```sql
+MariaDB [test]> select * from test;
++----+--------+------+-------+
+| id | name   | addr | score |
++----+--------+------+-------+
+|  1 | 测试   | NULL |   100 |
+|  2 | 测试   | NULL |   100 |
+|  3 | 测试   | NULL |   100 |
+|  4 | 测试   | NULL |   100 |
+|  5 | 测试   | NULL |   100 |
++----+--------+------+-------+
+5 rows in set (0.00 sec)
+
+```
+
+### 3.4 SQL分类
+
+DDL（data definition language）数据库定义语言CREATE、ALTER、DROP、SHOW
+
+DML（data manipulation language）数据操纵语言SELECT、UPDATE、INSERT、DELETE
+
+DCL（Data Control Language）数据库控制语言,是用来设置或更改数据库用户或角色权限的语句
+
+ ### 3.5 数据表的文件介绍
+
+一个数据库对应一个文件夹
+
+一个表对应一个或多个文件
+
+引擎是myisam，一个表对应三个文件
+
+ ![image](./image/1536654269605.png)
+
+引擎是innodb,一个表对应一个表结构文件
+
+ ![1536654519700](./image/1536654519700.png)
+
+所有的innodb引擎的数据统一的存放在data\ibdata1文件中。如果数据量很大，MySQL会自动的创建ibdata2，ibdata3，…，目的就是为了便于管理。
+
+ 引擎是memory，数据存储在内存中，重启服务数据丢失，但是读取速度非常快。
+
+### 3.6 字符集
 
