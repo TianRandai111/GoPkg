@@ -1,0 +1,52 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: 步荀仙
+ * @Date: 2019-08-22 11:40:17
+ * @LastEditors: 步荀仙
+ * @LastEditTime: 2019-08-22 16:10:27
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .list{
+            width: 300px;
+            list-style: none;
+            padding: 0px;
+            margin:50px;
+        }
+
+        .list li{
+            line-height: 50px;
+            border-bottom: 1px dotted black;
+        }
+
+    </style>
+
+    <script>
+        window.onload = function () {
+            var aList = ['战锤40K','流浪地球','战狼2','哪吒值魔童降世','异形','独立日2'];
+            var iUl = document.getElementById('url01');
+            for (var i = 0; i < aList.length; i++){
+                var iStr = '<li>电影名称排行:\t' + '《' +aList[i] + '》' +'</li>';
+                iUl.innerHTML += iStr;
+            }
+        }
+    </script>
+</head>
+<body>
+    <ul class="list" id = 'url01'>
+        <!-- <li>电影名称排行</li>
+        <li>电影名称排行</li>
+        <li>电影名称排行</li>
+        <li>电影名称排行</li>
+        <li>电影名称排行</li>
+        <li>电影名称排行</li> -->
+    </ul> 
+</body>
+</html>

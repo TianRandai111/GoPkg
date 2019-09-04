@@ -1,0 +1,11 @@
+body{
+    background: rgb(224, 248, 4);
+}
+
+input{
+    width:200px;
+    height: 50px;
+    background: rgb(0, 255, 21);
+    border: 0px;
+    outline: none;
+}

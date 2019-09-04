@@ -1,0 +1,47 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: 步荀仙
+ * @Date: 2019-08-22 09:22:55
+ * @LastEditors: 步荀仙
+ * @LastEditTime: 2019-08-22 11:40:30
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // 循环语句 for循环
+        /*
+        for (var i=0;i<len;i+=1){
+            ......
+        }
+        */
+
+        // 循环输出数组中的值
+        // var aList01 = ['1','2','3','4','4','3','2','1','2','3','4','5','6','5','5','3','3','4','2','1'];
+
+        // for (var i = 0; i< aList01.length; i++){
+        //     alert(aList01[i])
+        // }
+
+        // 数组去重
+        var aList01 = ['1','2','3','4','4','3','2','1','2','3','4','5','6','5','5','3','3','4','2','1'];
+        var aList02 = [];
+
+        // 因为indexOF方法只取第一个值的下标，所以下标等于i，赋值给aList02，不等于则不赋值
+        for (var i = 0; i < aList01.length; i++){
+            if (aList01.indexOf( aList01[i]) == i ) {
+                aList02.push(aList01[i]);
+            }
+        }
+        alert(aList02);
+
+    </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: 步荀仙
+ * @Date: 2019-08-26 16:46:36
+ * @LastEditors: 步荀仙
+ * @LastEditTime: 2019-08-29 16:52:30
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background:gold;
+            position: fixed;
+            left:0px;
+            top:100px;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var oBox = document.getElementById('box');
+            var iLeft = 0;
+            var iSpeed = 3;
+            var time = setInterval(fnMove,30);
+            function fnMove(){
+                iLeft += iSpeed;
+                if (iLeft > 600){
+                    // clearInterval(time);
+                    iSpeed = -3;
+                } else if (iLeft < 0) {
+                    iSpeed = 3;
+                }
+                oBox.style.left = iLeft + 'px';
+            }
+        }
+     </script>
+</head>
+<body>
+    <div class="box" id="box">
+                    
+    </div>
+</body>
+</html>
+

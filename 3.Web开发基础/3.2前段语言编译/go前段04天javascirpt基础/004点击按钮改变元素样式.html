@@ -1,0 +1,42 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: 步荀仙
+ * @Date: 2019-08-15 16:03:25
+ * @LastEditors: 步荀仙
+ * @LastEditTime: 2019-08-15 16:19:54
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        window.onload = function() {
+            //获取html标签id
+            var oBtn = document.getElementById('btn')
+            var oDiv = document.getElementById('div01')
+
+            //函数定义
+            function fnChange() {
+                oDiv.style.width = '200px';
+                oDiv.style.height = '200px';
+                oDiv.style.background = 'gold';
+            }
+            
+            //fnChange();
+
+            //控制效果
+            oBtn.onclick = fnChange;
+        }
+    </script>
+</head>
+<body>
+    <input type = "button" value = "改变样式" id = btn>
+    <div id = "div01">
+        这是一个div
+    </div>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: 步荀仙
+ * @Date: 2019-08-29 17:03:27
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2019-09-04 09:54:38
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    		body,ul{
+			margin:0;
+			padding:0;
+		}
+
+		.list_con{
+			
+			width:1000px;
+			height:200px;
+			border:1px solid #000;
+			margin:10px auto 0;
+			background-color:#f0f0f0;
+			position:relative;
+			overflow:hidden;
+		}
+
+		.list_con ul{
+			list-style:none;
+			width:2000px;
+			height:200px;
+			position:absolute;
+			/* 样式的值如果是0，可以不写单位 */
+			left:0;
+			top:0;
+		}
+
+
+		.list_con li{
+			width:180px;
+			height:180px;
+			float:left;
+			margin:10px;
+		}
+
+		.btns_con{
+			width:1000px;
+			height:30px;
+			margin:50px auto 0;
+			position:relative;
+		}
+
+		.left,.right{
+			width:30px;
+			height:30px;
+			background-color:gold;
+			position:absolute;
+			left:-40px;
+			top:124px;
+			font-size:30px;
+			line-height:30px;
+			color:#000;
+			font-family: 'Arial';
+			text-align:center; 
+			cursor:pointer;
+			border-radius:15px;
+			opacity:0.5;
+		}
+		.right{
+			left:1010px;			
+			top:124px;			
+		}
+    </style>
+    <script>
+        window.onload = function() {
+            var oList = document.getElementById('list');
+
+			var oLeft = document.getElementById('btn01');
+
+			var oRight = document.getElementById('btn02')
+
+			var oSlide = document.getElementById('slide')
+			
+            //将ul中的5个li在+5个li赋值回到olist中
+
+            oList.innerHTML = oList.innerHTML + oList.innerHTML;
+
+			//定义一个变量，来存储上一次iSpeed的值
+			var iLastSpeed = -3;
+
+			var iSpeed = -3;
+
+            var iLeft = iSpeed;ddd
+			
+            var time = setInterval(fnMove,30);
+
+            function fnMove(){
+            	iLeft += iSpeed;
+                
+				if ( iLeft <= -1000 ){
+					iLeft = 0;
+				}
+
+				//运动到最右面的时候 图片整体拉向起点位置
+				if ( iLeft > 0 ){
+					iLeft = -1000;
+				}
+
+                oList.style.left = iLeft + 'px'
+            }
+
+			//鼠标点击左箭头实现图片想左滚动
+			oLeft.onclick = function() {
+				iSpeed = -3;
+			}
+
+			//鼠标点击右箭头实现图片向右滚动
+			oRight.onclick = function() {
+				iSpeed = 3;
+			}
+
+			//给滚动的图片外面的容器标签做鼠标的移入移出的时间
+			oSlide.onmouseover = function() {
+				//使用定时器控制
+				//clearInterval(time);
+
+				//使用变量控制
+				iLastSpeed = iSpeed;
+				iSpeed = 0;
+			}
+
+			oSlide.onmouseout = function() {
+				//time = setInterval(fnMove,30);
+				iSpeed = iLastSpeed;
+			}
+
+        }
+    </script>
+</head>
+<body>
+    <div class="btns_con">
+        <div class="left" id="btn01">&lt;</div>
+        <div class="right" id="btn02">&gt;</div>
+    </div>
+    <div>
+        <div class="list_con" id="slide">
+            <ul class="list" id="list">
+                <li><a href=""><img src="./007images/1.jpg" alt="" width="180"></a></li>
+                <li><a href=""><img src="./007images/2.jpg" alt="" width="180"></a></li>
+                <li><a href=""><img src="./007images/3.jpg" alt="" width="180"></a></li>
+                <li><a href=""><img src="./007images/4.jpg" alt="" width="180"></a></li>
+                <li><a href=""><img src="./007images/5.jpg" alt="" width="180"></a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

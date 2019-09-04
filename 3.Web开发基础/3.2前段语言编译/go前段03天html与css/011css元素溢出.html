@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box01,.box02,.box03{
+            width: 300px;
+            height: 500px;
+            
+        }
+
+        .box01{
+            overflow: hidden;
+        }
+
+        .box02{
+            overflow: scroll;
+        }
+
+        .box03{
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        visible 默认值，让其显示
+        hidden 隐藏超出部分
+        scroll 使用滚动条 ，方便查询超出部分 ，不超出也会显示滚动条
+        auto  使用滚动条，方便查询超出的部分，不超出不会显示滚动条
+     -->
+
+     <div class="box01">
+        <img src="../go前端01天/images/听说你是恶魔.jpg" alt="听说你是恶魔">
+     </div>
+
+     <div class="box02">
+        <img src="../go前端01天/images/听说你是恶魔.jpg" alt="听说你是恶魔">
+    </div>
+
+    <div  class="box03">
+        <img src="../go前端01天/images/听说你是恶魔.jpg" alt="听说你是恶魔">
+    </div>
+</body>
+</html>

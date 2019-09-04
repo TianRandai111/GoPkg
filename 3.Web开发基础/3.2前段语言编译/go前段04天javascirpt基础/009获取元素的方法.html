@@ -1,0 +1,29 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: 步荀仙
+ * @Date: 2019-08-19 17:29:35
+ * @LastEditors: 步荀仙
+ * @LastEditTime: 2019-08-19 17:59:15
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // 当整个页面加载完之后，在执行大括号里的代码
+        window.onload = function () {
+        //获取标签id属性的元素 document.getElementById;
+        var iDiv01 = document.getElementById("div01")
+        iDiv01.style.color = 'blue';
+        iDiv01.innerHTML = "你好啦兄弟"
+        }
+    </script>
+</head>
+<body>
+    <div id = "div01" style="color: red">这是一个div</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: 步荀仙
+ * @Date: 2019-08-26 14:26:02
+ * @LastEditors: 步荀仙
+ * @LastEditTime: 2019-08-26 16:46:01
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background: gold;
+            position: fixed;
+            top: 100px;
+            left: 0px;
+        }
+    </style>
+
+    <script>
+        window.onload = function() {
+            var oBox = document.getElementById('box');
+            var iLeft = 0;
+            var timer = setInterval(fnMove,30);
+            function fnMove() {
+                iLeft += 3;
+
+                if (iLeft > 600) {
+                    iLeft -= 3
+                    oBox.style.left = iLeft + 'px'; 
+                }
+                //字符拼接
+                oBox.style.left = iLeft + 'px';
+            }
+
+           
+
+        }
+    </script>
+
+</head>
+<body>
+    <div class="box" id="box">
+
+    </div>
+</body>
+</html>

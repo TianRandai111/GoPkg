@@ -1,0 +1,61 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: 步荀仙
+ * @Date: 2019-08-15 14:56:55
+ * @LastEditors: 步荀仙
+ * @LastEditTime: 2019-08-15 15:29:45
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        window.onload=function() {
+            var oDiv=document.getElementById('div01');
+            var oA = document.getElementById('link01')
+
+            //读取值的信息
+            var sId = oDiv.id
+
+            alert(sId);
+
+            // 写属性值，也叫作设置属性值
+            oDiv.style.color='red';
+            oDiv.style.fontSize = '30px';
+
+            //这是class属性值
+            oA.className = 'sty02';
+            
+            //操作元素报过的内容
+            //读取包的内容
+            var sTr = oDiv.innerHTML;
+            alert(sTr);
+
+            //写元素报过的内容
+            oDiv.innerHTML = '改变的文字';
+            oDiv.innerHTML = '<a href="http://www.baidu.com/"> 百度网 </a>'
+            oDiv.innerHTML = '<ul><li></li></ul>'
+        }
+    </script>
+    <style>
+        .sty01{
+            color: red;
+            font-size: 20px;
+        }
+
+        .sty02{
+            color: aqua;
+            font-size: 30px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="div01" >这是一个div</div>
+    <a href="#" class="sty01" id='link01'>这是一个连接</a>
+</body>
+</html>
