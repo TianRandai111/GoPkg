@@ -1,0 +1,41 @@
+<!--
+ * @Descripttion: 变量作用于
+ * @version: 
+ * @Author: 步荀仙
+ * @Date: 2019-09-02 10:56:23
+ * @LastEditors: 步荀仙
+ * @LastEditTime: 2019-09-16 15:48:32
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // 1.全局变量，在函数之外定义的变量，为整个页面公用，函数内部外部都可以访问。
+        // 2.局部变量，在函数内部定义的变量，只能在定义该变量的函数内部访问，外部无法访问。
+        
+        //全局变量
+        var iNum01 = 12;
+        function fnMyalert(){
+            //定义局部变量
+            var iNum02 = 24;
+
+            //函数内部调用全局变量
+            alert(iNum01);
+        
+            //
+            alert(iNum02);
+        }
+        fnMyalert();
+        alert("函数外调用")
+        alert(iNum01);
+        alert(iNum02);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
