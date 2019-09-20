@@ -1,0 +1,63 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: 步荀仙
+ * @Date: 2019-09-17 17:17:49
+ * @LastEditors: 步荀仙
+ * @LastEditTime: 2019-09-17 19:01:07
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src='repo/jquery-1.12.4.min.js'></script>
+    <script>
+        $(function(){
+
+            //id选择器
+            var $oDiv = $('#div01');
+            $oDiv.css({'color':'red','font-size':30});
+
+            //类选择器
+            var $oDiv2 = $('.box');
+            $oDiv2.css({'color':'gold','fontSize':'30px'});
+            
+            var $span = $('.box span');
+            $span.css({'color':'red','font-weight':'bold'});
+
+            //属性选择器
+            var $oDiv3 = $('div[class=box2]');
+            $oDiv3.css({'color':'pink'});
+
+            //标签选择器
+            var $oLi = $('li');
+            $oLi.css({'background':'gold'});
+
+            //选择过滤器 包含  选择包含span标签的div
+            var $oDiv4 = $('div').has('span');
+            $oDiv4.css({'text-indent':50});
+        });
+    </script>
+</head>
+<body>
+    <div id='div01'>这是一个div</div>
+    <div class="box">这是二个<span>div</span></div>
+    <div class="box">这是三个div</div>
+    <div class="box2">这是四个div</div>
+    <ul>
+        <li>列表文字</li>
+        <li>列表文字</li>
+        <li>列表文字</li>
+        <li>列表文字</li>
+        <li>列表文字</li>
+        <li>列表文字</li>
+    </ul>
+</body>
+</html>
+
+
+energy-consultant 
+cloud-platform/cloud-platform-amqp-umeng
