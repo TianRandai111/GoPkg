@@ -4,7 +4,7 @@
  * @Author: 步荀仙
  * @Date: 2019-09-17 17:17:49
  * @LastEditors: 步荀仙
- * @LastEditTime: 2019-09-17 19:01:07
+ * @LastEditTime: 2019-09-25 10:10:23
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -39,6 +39,14 @@
             //选择过滤器 包含  选择包含span标签的div
             var $oDiv4 = $('div').has('span');
             $oDiv4.css({'text-indent':50});
+
+            //选择过滤器 不包含 选择不包含box2的标签
+            var $oDiv5 = $('div').not('..box2');
+            $oDiv5.css({'text-decoration':'underline'});
+
+            // 选择第四个Li
+            var $oLi2 = $('li').eq(3);
+            $oLi2.css({'text-indent':50});
         });
     </script>
 </head>
@@ -50,14 +58,10 @@
     <ul>
         <li>列表文字</li>
         <li>列表文字</li>
-        <li>列表文字</li>
+        <li>列表文字</li> 
         <li>列表文字</li>
         <li>列表文字</li>
         <li>列表文字</li>
     </ul>
 </body>
 </html>
-
-
-energy-consultant 
-cloud-platform/cloud-platform-amqp-umeng

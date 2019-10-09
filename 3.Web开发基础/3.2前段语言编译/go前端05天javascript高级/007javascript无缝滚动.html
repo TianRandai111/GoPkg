@@ -3,8 +3,8 @@
  * @version: 
  * @Author: 步荀仙
  * @Date: 2019-08-29 17:03:27
- * @LastEditors: Please set LastEditors
- * @LastEditTime: 2019-09-04 09:54:38
+ * @LastEditors: 步荀仙
+ * @LastEditTime: 2019-09-25 17:00:42
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -95,7 +95,7 @@
 
 			var iSpeed = -3;
 
-            var iLeft = iSpeed;ddd
+            var iLeft = iSpeed;
 			
             var time = setInterval(fnMove,30);
 
@@ -127,16 +127,16 @@
 			//给滚动的图片外面的容器标签做鼠标的移入移出的时间
 			oSlide.onmouseover = function() {
 				//使用定时器控制
-				//clearInterval(time);
+				clearInterval(time);
 
 				//使用变量控制
-				iLastSpeed = iSpeed;
-				iSpeed = 0;
+				// iLastSpeed = iSpeed;
+				// iSpeed = 0;
 			}
 
 			oSlide.onmouseout = function() {
-				//time = setInterval(fnMove,30);
-				iSpeed = iLastSpeed;
+				time = setInterval(fnMove,30);
+				//iSpeed = iLastSpeed;
 			}
 
         }

@@ -1,0 +1,57 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: 步荀仙
+ * @Date: 2019-09-25 11:34:46
+ * @LastEditors: 步荀仙
+ * @LastEditTime: 2019-10-08 16:36:54
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .red{
+            color: brown;
+        }
+        .big{
+            font-size: 30px;
+        }
+        .noline{
+            text-decoration: none;
+        }
+    </style>
+    <script src="./repo/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+            var $oDiv = $('#div01');
+
+            //读取样式属性值
+            // var sSize = $oDiv.css('font-size');
+            // alert(sSize);
+
+            //写样式属性，也就做设置样式属性
+            $oDiv.css('color','red');
+            $oDiv.css({'font-size':30,'font-weight':'bold'});
+
+            //操作样式类名
+            var $a = $('#link01');
+            //添加类名
+            $a.addClass('red');
+            $a.addClass('big');
+            $a.addClass('noline');
+            //删除类名
+            $a.removeClass('red');
+            $a.removeClass('noline')
+        })
+    </script>
+</head>
+<body>
+    <div id='div01'>这是一个div</div>
+    <div>这是2个div</div>
+    <a href="#" id="link01">你好，这里是测试网站</a>
+</body>
+</html>

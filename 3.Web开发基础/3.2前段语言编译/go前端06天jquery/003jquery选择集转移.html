@@ -1,0 +1,55 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: 步荀仙
+ * @Date: 2019-09-24 10:17:13
+ * @LastEditors: 步荀仙
+ * @LastEditTime: 2019-09-24 17:33:41
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src='repo/jquery-1.12.4.min.js'></script>
+    <script>
+        $(function(){
+            var $div = $('#div01');
+            //选择上方一个兄弟节点
+            $div.prev().css({'color':'red'});
+            
+            //选择上方所有兄弟节点
+            $div.prevAll().css({'text-indent':50});
+
+            //选择下方一个兄弟节点
+            $div.next().css({'color':'pink'});
+            
+            //选择相仿所有兄弟节点
+            $div.nextAll().css({'text-indent':30});
+
+            //除了自己 其他全部都有
+            $div.siblings().css({'text-decoration':'underline'});
+
+            //现在该元素的子集
+            $div.children().css({'color':'green'})
+
+            //找寻该元素中的子集
+            $div.find('.sp02').css({'font-size':20})
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <h2>这是一个h2标题</h2>
+        <p>这是一个p标签</p>
+        <div id='div01'>这是一个<span>div</span><span class = 'sp02'>第二个span</span></div>
+        <h3>这是一个h3标题</h3>
+        <p>这是第二个段落标签</p>
+    </div> 
+</body>
+</html>
+
+
+cloud-platform/cloud-platform-amqp-umeng
