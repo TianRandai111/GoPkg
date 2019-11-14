@@ -1,0 +1,42 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: 步荀仙
+ * @Date: 2019-11-09 18:15:05
+ * @LastEditors: 步荀仙
+ * @LastEditTime: 2019-11-11 13:56:27
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./repo/jquery-1.12.4.min.js"></script>
+    <script>
+        // prop获取或设置某个属性的值
+        // html取出或设置html的内容 
+        $(function(){
+            var $a = $('#link');
+            // 读属性值
+            var sID = $a.prop("id");
+            // alert($sID)
+            // 写属性值
+            $a.prop({'href':'http://www.baidu.com','title':'啦啦啦啦'});
+
+            // 读取元素包裹的内容
+            var sTr = $a.html();
+
+            // alert(sTr);
+            $a.html('百度网')
+            $a.html('<ul><li>列表文字</li><li>列表文字</li><li>列表文字</li></ul>')
+        })
+    </script>
+</head>
+<body>
+    <a href='#' id = 'link' title="这是去往百度的链接">这是一个链接</a>
+</body>
+</html>
+
+

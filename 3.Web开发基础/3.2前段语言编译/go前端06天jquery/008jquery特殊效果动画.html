@@ -1,0 +1,71 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: 步荀仙
+ * @Date: 2019-11-09 09:45:36
+ * @LastEditors: 步荀仙
+ * @LastEditTime: 2019-11-09 15:07:21
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./repo/jquery-1.12.4.min.js"></script>
+    <style>
+        .box{
+            width:  200px;
+            height: 200px;
+            background: gold;
+            display: none;
+        }
+
+    </style>
+    <script>
+        $(function(){
+            var $btn=$("#btn");
+            var $box=$(".box");
+
+            
+            $btn.click(function(){
+                // 隐藏内容
+                // $box.hide();
+
+                // 显示内容
+                // $box.show();
+                
+                // 切换元素的隐藏/显示效果
+                // $box.toggle();
+                
+                // 元素淡入淡出效果
+                // 元素淡入效果
+                // $box.fadeIn()
+
+                // 元素淡出效果
+                // $box.fadeOut();
+                
+                // 切换元素的淡入\淡出效果
+                // $box.fadeToggle();
+
+                // 元素的展开\卷起效果
+                // 元素向上卷起
+                // $box.slideUp()
+
+                // 元素向下展开
+                // $box.slideDown()
+
+                // 切换元素的展开\卷起效果(加上stop方法 停止当前动画)
+                $box.stop().slideToggle();
+                 
+            })
+
+        });
+    </script>
+</head>
+<body>
+    <input type="button" value="动画" id='btn'>
+    <div class="box"></div>
+</body>
+</html>
