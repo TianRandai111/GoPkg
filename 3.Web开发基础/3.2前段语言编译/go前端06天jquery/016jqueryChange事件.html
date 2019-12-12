@@ -1,0 +1,30 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: 步荀仙
+ * @Date: 2019-12-12 16:00:22
+ * @LastEditors: 步荀仙
+ * @LastEditTime: 2019-12-12 16:31:06
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Document</title>
+     <script src="./repo/jquery-1.12.4.min.js"></script>
+     <script>
+         $(function(){
+            var $input = $("#input01");
+            //  绑定Change事件
+            $input.change(function(){
+                console.log($(this).val());
+            })
+         })
+     </script>
+ </head>
+ <body>
+     <input type="text" name="" id="input01">
+ </body>
+ </html>

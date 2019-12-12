@@ -1,0 +1,69 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: 步荀仙
+ * @Date: 2019-12-12 16:33:47
+ * @LastEditors: 步荀仙
+ * @LastEditTime: 2019-12-12 17:05:11
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background: goldenrod;
+            margin: 50px auto;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background: greenyellow;
+        }
+    </style>
+    <script src="./repo/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+            var $box = $('.box');
+            /* 
+            // 鼠标移入,子元素参与(事件冒泡)
+            $box.mouseover(
+                function(){
+                    $(this).stop().animate({"margin-top":100});
+                }
+            )
+
+            // 鼠标移出，子元素参与(事件冒泡)
+            $box.mouseout(
+                function(){
+                    $(this).stop().animate({"margin-top":200})
+                }
+            ) */
+
+            // 子元素不参与事件
+            
+            $box.mouseenter(
+                function(){
+                    $(this).stop().animate({"margin-top":100});
+                }
+            )
+
+            $box.mouseleave(
+                function(){
+                    $(this).stop().animate({"margin-top":200})
+                }
+            )
+        })
+    </script>
+</head>
+<body>
+    <div class="box">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>
