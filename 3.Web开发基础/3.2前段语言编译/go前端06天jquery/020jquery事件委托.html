@@ -1,0 +1,46 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: 步荀仙
+ * @Date: 2019-12-13 16:21:40
+ * @LastEditors: 步荀仙
+ * @LastEditTime: 2019-12-13 18:22:38
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./repo/jquery-1.12.4.min.js"></script>
+    <script>
+        // delegate事件委托方法
+        $(function(){
+            var $li = $('.list li');
+            // 性能不高的写法
+            /* $li.click(function(){
+                $(this).css({'background':'red'});
+            }) */
+            
+            // 事件委托的写法(子集，事件，函数)
+            var $ul = $('.list');
+            $ul.delegate('li','click',function(){
+                $(this).css({'background':'red'});
+            })
+        })
+    </script>
+</head>
+<body>
+    <ul class="list">
+        <li>列表文字</li>
+        <li>列表文字</li>
+        <li>列表文字</li>
+        <li>列表文字</li>
+        <li>列表文字</li>
+        <li>列表文字</li>
+        <li>列表文字</li>
+        <li>列表文字</li>
+    </ul>
+</body>
+</html>
