@@ -1,0 +1,55 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: 步荀仙
+ * @Date: 2019-12-17 18:26:29
+ * @LastEditors: 步荀仙
+ * @LastEditTime: 2019-12-17 19:49:32
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        let arr = [1,2,3];
+        
+        // 两个数组指向同一个地址
+        /* let arr2 = arr;
+        arr.push(4);
+        alert(arr);
+        alert(arr2); */
+
+        // 数组复制，传统方法
+        /* let arr3 = [];
+        for (let index = 0; index < arr.length; index++) {
+            arr3.push(arr[i])
+        }
+        alert(arr3) */
+
+        // 数组复制ES6版本
+        /* let arr4 = [...arr,5];
+        arr.push(4);
+        alert(arr);
+        alert(arr4); */
+
+        // 函数内使用数组
+        function fnAdd(a,b,c){
+            alert( a + b + c );
+        };
+        fnAdd(...arr);
+
+        // 
+        function fnAlert(...a) {
+            console.log(a);
+        };
+        fnAlert(10,5,6);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

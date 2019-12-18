@@ -1,0 +1,49 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: 步荀仙
+ * @Date: 2019-12-18 17:16:26
+ * @LastEditors: 步荀仙
+ * @LastEditTime: 2019-12-18 17:26:54
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var name = '步荀仙';
+        var age = 18;
+
+        // var person = {
+        //     name: name,
+        //     age: age,
+        //     showname: function() {
+        //         alert(this.name);
+        //     },
+        //     showage: function() {
+        //         alert(this.age);
+        //     },
+        // }
+
+        // 可以对对象进行简写
+        var person = {
+            name,
+            age,
+            showname(){
+                alert(this.name);
+            },
+            showage(){
+                alert(this.age);
+            },
+        };
+        person.showname();
+        person.showage();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

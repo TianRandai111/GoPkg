@@ -1,0 +1,847 @@
+{
+    "AllDoMainAry": [
+      {
+        "DomainAry": [
+          {
+            "networkModel": "public",
+            "serviceName": "spot-transaction-web",
+            "domainMame": "etsp.fanneng.com",
+            "https": true,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "energy-equipment-app",
+            "domainMame": "behavior.fanneng.com",
+            "https": true,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "bigdata-gateway",
+            "domainMame": "api-gateway.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "ndustry-provider-wisdom-manage",
+            "domainMame": "aioper.fanneng.com",
+            "https": true,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "ai-provider-business",
+            "domainMame": "aieng.fanneng.com",
+            "https": true,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "fnw-common",
+            "domainMame": "aioper-back.fanneng.com",
+            "https": true,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "private",
+            "serviceName": "bigdata-api-simulate",
+            "domainMame": "bigdata-api-fnw-simulate.topaas.enncloud.cn",
+            "https": false,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "private",
+            "serviceName": "datamanager-backendservice-simulate",
+            "domainMame": "datamanager-backendservice-fnw-simulate.topaas.enncloud.cn",
+            "https": false,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "private",
+            "serviceName": "datamanager-front-simulate",
+            "domainMame": "datamanager-front-fnw-simulate.topaas.enncloud.cn",
+            "https": false,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "private",
+            "serviceName": "indice-calculator-simulate",
+            "domainMame": "indice-calculator-fnw-simulate.topaas.enncloud.cn",
+            "https": false,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "energy-app-h5",
+            "domainMame": "prosumer-app-h5.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "help-center",
+            "domainMame": "help-center.fanneng.com",
+            "https": true,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "private",
+            "serviceName": "public-service-front",
+            "domainMame": "opt.topaas.enncloud.cn",
+            "https": false,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "energy-consultant",
+            "domainMame": "aieng.pro.fanneng.com",
+            "https": true,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "go-fastfs-nginx",
+            "domainMame": "files.fanneng.com",
+            "https": true,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "uac-admin-web",
+            "domainMame": "uac-admin.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "uac-admin-config",
+            "domainMame": "uac-admin-api.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "application-common",
+            "domainMame": "app-plateform.fanneng.com",
+            "https": true,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "ems-industry-web",
+            "domainMame": "device.fanneng.com",
+            "https": true,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "industry-provider-business",
+            "domainMame": "device-back.fanneng.com",
+            "https": true,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "energy-industry-web",
+            "domainMame": "energy-industry.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "fnw-entry",
+            "domainMame": "register.fanneng.com",
+            "https": true,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "energy-big-src",
+            "domainMame": "energy-screen.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "home-page-php",
+            "domainMame": "testser.fanneng.com",
+            "https": true,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "energy-app-h5-https",
+            "domainMame": "prosumer-app-h5-https.fanneng.com",
+            "https": true,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "iot-equipment-scan-code",
+            "domainMame": "energy-iot-equipment.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "energy-nginx",
+            "domainMame": "energy-nginx.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "https-nginx-3",
+            "domainMame": "img.fanneng.com",
+            "https": true,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "https-nginx-2",
+            "domainMame": "appapi.fanneng.com",
+            "https": true,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "https-nginx-1",
+            "domainMame": "webapi.fanneng.com",
+            "https": true,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "etsp-mail",
+            "domainMame": "etrade.fanneng.com",
+            "https": true,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "znxj-nginx",
+            "domainMame": "znxj.tipaas.enncloud.cn",
+            "https": false,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "ent-center-font",
+            "domainMame": "ent-center.fanneng.com",
+            "https": true,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "uac-new",
+            "domainMame": "uac.fanneng.com",
+            "https": true,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "widommap",
+            "domainMame": "sops.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "mobile-inspect",
+            "domainMame": "operation-h5.fanneng.com",
+            "https": true,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "hps-web",
+            "domainMame": "hps-web.fanneng.com",
+            "https": true,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "hps-app-consumer",
+            "domainMame": "hps-api.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "energy-park-web",
+            "domainMame": "prosumer-park.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "fnos-plc",
+            "domainMame": "plc.fanneng.com",
+            "https": true,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "operation-report-plc",
+            "domainMame": "plc-back.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "om-web",
+            "domainMame": "om.fanneng.com",
+            "https": true,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "provider-pvs-web",
+            "domainMame": "pvs.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "etsp",
+            "domainMame": "abc.fanenng.com",
+            "https": false,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "operation-web",
+            "domainMame": "operation.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "operation-gateway",
+            "domainMame": "operation-back.fanneng.com,operation-gateway-fnw-release.v15.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "uac-center",
+            "domainMame": "uac-center.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "energy-web",
+            "domainMame": "prosumer.fanneng.com",
+            "https": true,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "uac",
+            "domainMame": "uac.enncloud.cn",
+            "https": true,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "fefn-operation",
+            "domainMame": "operation-ues.fanneng.com",
+            "https": true,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "nginx-2-0",
+            "domainMame": "api.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "operation-app-api",
+            "domainMame": "operation-app-api.v15.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "operation-back-consumer",
+            "domainMame": "oper-cen-api.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "fe-test-energy-628",
+            "domainMame": "energy.v15.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "private",
+            "serviceName": "etsp-rule-v15",
+            "domainMame": "etsp-rule.v15.topaas.enncloud.cn",
+            "https": false,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "manage-vue",
+            "domainMame": "manage.v15.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "regist",
+            "domainMame": "register.v15.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "private",
+            "serviceName": "etsp-python-v15",
+            "domainMame": "etsp-python.v15.topaas.enncloud.cn",
+            "https": false,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "etsp-etsp-v15",
+            "domainMame": "etrade.v15.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "private",
+            "serviceName": "etsp-rmi-v15",
+            "domainMame": "etsp-rmi-v15.topaas.enncloud.cn",
+            "https": false,
+            "NameSpace": "fnw-release"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "nginx",
+            "domainMame": "api.v15.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-release"
+          }
+        ]
+      },
+      {
+        "DomainAry": [
+          {
+            "networkModel": "private",
+            "serviceName": "energy-app-h5-new",
+            "domainMame": "energy-app-h5.testfnw.com",
+            "https": false,
+            "NameSpace": "fnw-test"
+          },
+          {
+            "networkModel": "private",
+            "serviceName": "public-service-front",
+            "domainMame": "opt-test.topaas.enncloud.cn",
+            "https": false,
+            "NameSpace": "fnw-test"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "work-order-service",
+            "domainMame": "workorder.testfnw.com",
+            "https": true,
+            "NameSpace": "fnw-test"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "home-page",
+            "domainMame": "www.testfnw.com",
+            "https": true,
+            "NameSpace": "fnw-test"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "fnos-om-hps-app-web",
+            "domainMame": "hps-web.testfnw.com",
+            "https": true,
+            "NameSpace": "fnw-test"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "nginx3",
+            "domainMame": "test3.testfnw.com",
+            "https": true,
+            "NameSpace": "fnw-test"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "nginx2",
+            "domainMame": "test2.testfnw.com",
+            "https": true,
+            "NameSpace": "fnw-test"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "nginx1",
+            "domainMame": "test1.testfnw.com",
+            "https": true,
+            "NameSpace": "fnw-test"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "fefn-op",
+            "domainMame": "operation-ues.testfnw.com",
+            "https": true,
+            "NameSpace": "fnw-test"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "home",
+            "domainMame": "www1.testfnw.com",
+            "https": true,
+            "NameSpace": "fnw-test"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "ent-center-font",
+            "domainMame": "ent-center.testfnw.com",
+            "https": true,
+            "NameSpace": "fnw-test"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "uac",
+            "domainMame": "uac.testfnw.com",
+            "https": true,
+            "NameSpace": "fnw-test"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "fnos-energy-app-h5-test",
+            "domainMame": "energy-app-h5.testfnw.com",
+            "https": true,
+            "NameSpace": "fnw-test"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "fnos-energy-parkfront-test",
+            "domainMame": "energy-park-web.testfnw.com",
+            "https": true,
+            "NameSpace": "fnw-test"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "fnos-plc",
+            "domainMame": "plc.testfnw.com",
+            "https": true,
+            "NameSpace": "fnw-test"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "fnos-exhibition",
+            "domainMame": "exhibition.preprod.tipaas.enncloud.cn",
+            "https": false,
+            "NameSpace": "fnw-test"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "fnos-om-web",
+            "domainMame": "om-web.testfnw.com",
+            "https": true,
+            "NameSpace": "fnw-test"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "fnos-energy-web",
+            "domainMame": "energy-web.testfnw.com",
+            "https": true,
+            "NameSpace": "fnw-test"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "test-fnos-pvs-web",
+            "domainMame": "pvs.test.tipaas.enncloud.cn",
+            "https": false,
+            "NameSpace": "fnw-test"
+          },
+          {
+            "networkModel": "private",
+            "serviceName": "etsp-rule-test",
+            "domainMame": "etsp-rule-test.topaas.enncloud.cn",
+            "https": false,
+            "NameSpace": "fnw-test"
+          },
+          {
+            "networkModel": "private",
+            "serviceName": "operation-provider-equ",
+            "domainMame": "operation-provider-equ-fnw-test.topaas.enncloud.cn",
+            "https": false,
+            "NameSpace": "fnw-test"
+          },
+          {
+            "networkModel": "private",
+            "serviceName": "fnw-api-nginx",
+            "domainMame": "api.topaas.enncloud.cn",
+            "https": false,
+            "NameSpace": "fnw-test"
+          },
+          {
+            "networkModel": "private",
+            "serviceName": "fnw-api-server",
+            "domainMame": "fnw-api.topaas.enncloud.cn",
+            "https": false,
+            "NameSpace": "fnw-test"
+          },
+          {
+            "networkModel": "private",
+            "serviceName": "idea-regist",
+            "domainMame": "idea.topaas.enncloud.cn",
+            "https": false,
+            "NameSpace": "fnw-test"
+          }
+        ]
+      },
+      {
+        "DomainAry": [
+          {
+            "networkModel": "private",
+            "serviceName": "specific-indice-calculator-simulate",
+            "domainMame": "specific-indice-calculator-fnw-simulate.topaas.enncloud.cn",
+            "https": false,
+            "NameSpace": "fnw-prod"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "operation-gateway",
+            "domainMame": "operation-back.pro.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-prod"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "energy-pm-web",
+            "domainMame": "energy-pm.pro.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-prod"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "operation-wechat",
+            "domainMame": "uesu-h5.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-prod"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "uee-energy-web",
+            "domainMame": "energy.pro.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-prod"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "etsp-front-preprod",
+            "domainMame": "etsp.pro.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-prod"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "hps-app-consumer",
+            "domainMame": "hps-api.pro.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-prod"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "fnos-om-hps-app-web",
+            "domainMame": "hps-web.pro.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-prod"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "operation-report-plc",
+            "domainMame": "plc-back.pro.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-prod"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "energy-park-front-preprod",
+            "domainMame": "energy-park.pro.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-prod"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "fnos-plc",
+            "domainMame": "plc.pro.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-prod"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "fnos-index-web",
+            "domainMame": "www.pro.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-prod"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "fnos-om-web",
+            "domainMame": "om.pro.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-prod"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "fnos-pvs-web",
+            "domainMame": "pvs.pro.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-prod"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "operation-web",
+            "domainMame": "operation.pro.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-prod"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "fefn-operation",
+            "domainMame": "operation-ues.pro.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-prod"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "operation-app-api",
+            "domainMame": "operation-app-api.pro.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-prod"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "operation-back-consumer",
+            "domainMame": "oper-cen-api.pro.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-prod"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "consumer-riet-api",
+            "domainMame": "riet-app.pro.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-prod"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "provider-pvs-app",
+            "domainMame": "provider-pvs-app.pro.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-prod"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "fe-test-maintain-628",
+            "domainMame": "maintain.pro.fanneng.com",
+            "https": false,
+            "NameSpace": "fnw-prod"
+          }
+        ]
+      },
+      {
+        "DomainAry": [
+          {
+            "networkModel": "private",
+            "serviceName": "public-service-front",
+            "domainMame": "opt-dev.topaas.enncloud.cn",
+            "https": false,
+            "NameSpace": "fnw-dev"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "mobile-inspect",
+            "domainMame": "mobile-inspect.testfnw.com",
+            "https": true,
+            "NameSpace": "fnw-dev"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "etsp-front-dev",
+            "domainMame": "etsp.dev.tipaas.enncloud.cn",
+            "https": false,
+            "NameSpace": "fnw-dev"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "project-manage",
+            "domainMame": "pm.tipaas.enncloud.cn",
+            "https": false,
+            "NameSpace": "fnw-dev"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "tsdb-search-test",
+            "domainMame": "data.test.tipaas.enncloud.cn",
+            "https": false,
+            "NameSpace": "fnw-dev"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "tsdb-search",
+            "domainMame": "data.tipaas.enncloud.cn",
+            "https": false,
+            "NameSpace": "fnw-dev"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "fnos-exhibition",
+            "domainMame": "exhibition.dev.tipaas.enncloud.cn",
+            "https": false,
+            "NameSpace": "fnw-dev"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "fnos-ues-web",
+            "domainMame": "ues.dev.tipaas.enncloud.cn",
+            "https": false,
+            "NameSpace": "fnw-dev"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "fnos-om-web",
+            "domainMame": "om.dev.tipaas.enncloud.cn",
+            "https": false,
+            "NameSpace": "fnw-dev"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "ues-workdesk-web",
+            "domainMame": "workdesk.dev.tipaas.enncloud.cn",
+            "https": false,
+            "NameSpace": "fnw-dev"
+          },
+          {
+            "networkModel": "public",
+            "serviceName": "fnos-pvs-web",
+            "domainMame": "pvs.dev.tipaas.enncloud.cn",
+            "https": false,
+            "NameSpace": "fnw-dev"
+          },
+          {
+            "networkModel": "private",
+            "serviceName": "operation-provider-equ",
+            "domainMame": "operation-provider-equipment-fnw-dev.topaas.enncloud.cn",
+            "https": false,
+            "NameSpace": "fnw-dev"
+          }
+        ]
+      }
+    ]
+  }
+  

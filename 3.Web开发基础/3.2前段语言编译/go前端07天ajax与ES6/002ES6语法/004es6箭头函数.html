@@ -1,0 +1,56 @@
+<!--
+ * @Descripttion: 箭头函数
+ * @version: 
+ * @Author: 步荀仙
+ * @Date: 2019-12-17 18:27:33
+ * @LastEditors: 步荀仙
+ * @LastEditTime: 2019-12-18 17:13:56
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // 箭头函数，简化匿名杉树操作
+        // var fnRs = (a,b) => {
+        //     var rs = a + b;
+        //     alert( rs );
+        // };
+        // fnRs( 1, 2 );
+
+        // var fnRs2 = a => {
+        //     alert( a );
+        // };
+        // fnRs2( "你好" );
+
+        // var fnRs3 = (a,b) => a + b;
+        // alert(fnRs3(5,5));
+
+        // var fnRs5 = a => a;
+        // alert(fnRs5("你猜"));
+
+        // // 返回对象是json时
+        // var fnRs4 = () => ({"a":5});
+        // console.log(fnRs4)
+        
+        var person = {
+            name: "tom",
+            age: 18,
+            showname: function(){
+                setTimeout(()=>{
+                    alert(this.name);
+                },2000)
+            },
+        }
+
+        person.showname();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: 步荀仙
+ * @Date: 2019-12-17 18:16:36
+ * @LastEditors: 步荀仙
+ * @LastEditTime: 2019-12-17 18:23:07
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // 数组解构
+        /* let arry = [1,2,3];
+        let [a,b,c] = arry;
+        alert(a);
+        alert(b);
+        alert(c); */
+
+        // json解构
+        let person = {name:"tom",age:18}
+        /* let {name,age} = person;
+        alert(name);
+        alert(age); */
+
+        // 函数参数解构
+        function  fnAlertPerson({name,age}) {
+            // 字符串模板
+            alert(`我的名字是：${name},我的年龄是：${age}`);
+        }
+
+        fnAlertPerson(person)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: 步荀仙
+ * @Date: 2019-12-17 08:43:32
+ * @LastEditors: 步荀仙
+ * @LastEditTime: 2019-12-17 17:01:31
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./repo/jquery-1.12.4.min.js"></script>
+    <script  type="text/javascript" >
+        $(function(){
+            
+            var $table01 = $("#table01");
+            // var $p01 = $('<tr><td>网络模式</td><td>所在空间</td><td>网络协议</td><td>服务名</td><td>域名</td></tr>');
+            // $table01.append($p01);
+
+            function getJsonArray( jsonData ){ 
+                var jsonLength = 0;
+                for (var item in jsonData){
+                    jsonLength++;
+                }
+                return jsonLength;
+            };
+
+           
+            
+            function arrayBL(a,sJson) {
+                for (let i = 0; i < a; i++) {
+                    var b =  getJsonArray( sJson.AllDoMainAry[i].DomainAry )
+                    for (let j = 0; j < b; j++) {
+                        if (sJson.AllDoMainAry[i].DomainAry[j].https) {
+                            var protocol = "https://"
+                        }else {
+                            var protocol = "http://"
+                        }
+                        if (sJson.AllDoMainAry[i].DomainAry[j].networkModel == 'public') {
+                            var networkModel = '<td style="color:green">' + "外网" + '</td>'
+                        }else {
+                            var networkModel = '<td style="color:red">' + "内网" + '</td>'
+                        }
+                        var $p = $('<tr>' + networkModel + '<td>' + sJson.AllDoMainAry[i].DomainAry[j].NameSpace + '</td><td>' + sJson.AllDoMainAry[i].DomainAry[j].serviceName + '</td><td>' + protocol + '</td><td>' + sJson.AllDoMainAry[i].DomainAry[j].domainMame + '</td></tr>');
+                        $table01.append($p);
+                    }
+                }
+            }
+
+
+            var sJson 
+/* 
+            $.ajax({
+                url: './TestJsonData.json',
+                // url: 'http://10.4.83.61/name',
+                type: 'get',
+                dataType: 'json',
+
+                // 传统写法
+                success: function(sJson) {
+                    var allInfoLen = getJsonArray(sJson.AllDoMainAry)
+                    arrayBL(allInfoLen,sJson);
+                },
+                error: function(){
+                    alert('服务器超时，请重试');
+                },
+                // 第二种写法
+            }).done(function(sJson) {
+                var allInfoLen = getJsonArray(sJson.AllDoMainAry)
+                    arrayBL(allInfoLen,sJson);
+            }).fail(function(params) {
+                alert('服务器超时，请重试');
+            }) */
+
+            $.get('./TestJsonData.json',function(sJson){
+                var allInfoLen = getJsonArray(sJson.AllDoMainAry)
+                    arrayBL(allInfoLen,sJson);
+            },'json')
+
+            // var allInfoLen = getJsonArray(sJson)
+            // arrayBL(allInfoLen);
+
+        })
+    </script>
+</head>
+<body>
+    <table border="1" id = "table01">
+        <tr>
+            <td>网络模式</td>
+            <td>所在空间</td>  
+            <td>服务名</td>  
+            <td>网络协议</td>
+            <td>域名</td>
+        </tr>      
+    </table>
+</body>
+</html>
+
+
+
+
+
+
+
+
