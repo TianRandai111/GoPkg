@@ -1,0 +1,68 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: 步荀仙
+ * @Date: 2019-12-24 20:22:51
+ * @LastEditors  : 步荀仙
+ * @LastEditTime : 2019-12-24 23:23:39
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/react.development.js"></script>
+    <script src="js/react-dom.development.js"></script>
+    <script src="js/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        class Increase extends React.Component {
+            constructor(props) {
+                // 初始化默认属性
+                super(props);
+                // 自定义属性默认值
+                this.state = { iNum: 10 }
+            }
+
+            // 通過setState方法來改變state裡面的值
+            // setState里面可以穿一个对象，也可以穿一个函数，函数需要返回一个对象
+            fnAdd() {
+                // 此方式可用单官方不推荐直接修改state
+                /* this.setState({
+                    iNum:this.state.iNum+1
+                }) */
+                
+                // prevState 指的最新的state最新的值
+                /* this.setState(function (prevState) {
+                    return { iNum: prevState.iNum + 1 }
+                }) */
+
+                // 箭头函数形式
+                this.setState(prevState=> ({iNum: prevState.iNum + 1 })) 
+            }
+
+            render() {
+                return (
+                    <div>
+                        <p>{this.state.iNum}</p>
+                        <input type="button" value="递增" onClick={this.fnAdd.bind(this)} />
+                    </div>
+                );
+            }
+        }
+
+        ReactDOM.render(
+            <Increase />,
+            document.getElementById("root")
+        )
+    </script>
+
+</body>
+
+</html>

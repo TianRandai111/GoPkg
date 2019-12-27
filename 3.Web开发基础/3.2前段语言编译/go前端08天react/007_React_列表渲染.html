@@ -1,0 +1,47 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: 步荀仙
+ * @Date: 2019-12-25 17:54:50
+ * @LastEditors: 步荀仙
+ * @LastEditTime: 2019-12-26 16:44:30
+ -->
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: 步荀仙
+ * @Date: 2019-12-25 17:54:50
+ * @LastEditors  : 步荀仙
+ * @LastEditTime : 2019-12-25 18:36:00
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/react.development.js"></script>
+    <script src="js/react-dom.development.js"></script>
+    <script src="js/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        let aList = ["红海", "复联3", "碟中谍", "碟中谍6", "熊出没"];
+
+        // 循环遍历数组，
+        let el = aList.map(function(item,i){
+            return <li key={i}>{item}</li>
+        })
+
+        ReactDOM.render(
+            <ul>{el}</ul>,
+            document.getElementById("root")
+        )
+    </script>
+</body>
+
+</html>

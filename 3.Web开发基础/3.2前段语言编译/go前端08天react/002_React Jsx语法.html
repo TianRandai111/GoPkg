@@ -4,7 +4,7 @@
  * @Author: 步荀仙
  * @Date: 2019-12-23 16:48:31
  * @LastEditors  : 步荀仙
- * @LastEditTime : 2019-12-23 18:07:38
+ * @LastEditTime : 2019-12-24 16:32:15
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -17,6 +17,12 @@
     <script src="js/react.development.js"></script>
     <script src="js/react-dom.development.js"></script>
     <script src="js/babel.min.js"></script>
+    <style>
+        .sty01 {
+            font-size: 30px;
+            color: brown;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,26 +31,31 @@
         let iNum01 = 10;
         let sTr = "asdfzcxv"
         let ok = false;
-        function fnRev(s){
+        let url = "http://www.baidu.com"
+        function fnRev(s) {
             // 字符串反转
             return s.split("").reverse().join("");
         }
         let el = (
             <div>
                 <h2>jsx语法</h2>
-                <p>{ iNum01 + 5 }</p>
-                <p>{ sTr }</p>
+                <p>{iNum01 + 5}</p>
+                <p>{sTr}</p>
                 {/* 字符串反转 */}
-                <p>{ sTr.split("").reverse().join("") }</p>
-                <p>{ fnRev(sTr) }</p>
+                <p>{sTr.split("").reverse().join("")}</p>
+                <p>{fnRev(sTr)}</p>
                 {/*三元运算表达式*/}
-                <p>{ ok?"YES":"NO" }</p>
+                <p>{ok ? "YES" : "NO"}</p>
+                {/*属性插入*/}
+                <a href={url} className="sty01">这是一个链接</a>
             </div>
         );
+
         ReactDOM.render(
             el,
             document.getElementById('root')
         )
+
     </script>
 </body>
 
