@@ -51,6 +51,7 @@
     <script src="js/react.development.js"></script>
     <script src="js/react-dom.development.js"></script>
     <script src="js/babel.min.js"></script>
+    <script src="js/axios.min.js"></script>
 </head>
 
 <body>
@@ -61,9 +62,25 @@
             constructor(props) { 
                 super(props);
                 this.state = {
-                    Alist: ["学习html", "学习css", "学习javascript", "学习go语言"],
+                    Alist: [],
                     sTodo: ''
                 }
+            }
+            componentDidMount() {
+                axios({
+                    url:'data.json',
+                    method:'get',
+                    responsetype:'json'
+                }).then( dat =>{ 
+                    console.log(dat);
+                    let list = dat.data
+                    this.setState({
+                        Alist:list
+                    })
+                })
+                // .catch(function(){
+                //     alert('服务器超时')
+                // });
             }
 
             fnChange(ev){
