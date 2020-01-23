@@ -4,7 +4,7 @@
  * @Author: 步荀仙
  * @Date: 2020-01-11 14:37:30
  * @LastEditors  : 步荀仙
- * @LastEditTime : 2020-01-14 20:44:58
+ * @LastEditTime : 2020-01-21 10:39:33
  */
 package routers
 
@@ -14,12 +14,7 @@ import (
 )
 
 func init() {
-	beego.Router("/", &controllers.MainController{})
-	// beego.Router("/index/?:id", &controllers.IndexController{}, "get:ShowGet;post:Post") //指定路由
-	beego.Router("/index/*", &controllers.IndexController{}, "get:ShowGet;post:Post") //指定路由
-	beego.Router("/mysql", &controllers.MysqlController{}, "get:ShowMysql;post:Post")
-	beego.Router("/orm",&controllers.OrmController{},"get:ShowOrm")
-	beego.Router("/insert",&controllers.OrmController{},"get:ShowInsert")
-	beego.Router("/update",&controllers.OrmController{},"get:ShowUpdate")
-
+	//beego.Router("/", &controllers.MainController{})
+	beego.Router("/", &controllers.LoginController{},"get:ShowLogin;post:HandLogin")
+	beego.Router("/register",&controllers.RegController{},"get:ShowReg;post:HandleReg")
 }

@@ -11,6 +11,7 @@ package main
 import (
 	_ "github.com/TianRandai111/GoPkg/3.Web开发基础/3.3beego开发/2.beego框架/beegoxc/routers"
 	"github.com/astaxie/beego"
+	_ "github.com/TianRandai111/GoPkg/3.Web开发基础/3.3beego开发/2.beego框架/beegoxc/models"
 )
 
 func main() {
